@@ -44,6 +44,7 @@ function RepositoriesProvider({ children }: RepositoriesProviderProps) {
   const [repositories, setRepositories] = useState<RepositoryProps[]>([]);
 
   async function addRepository(repositoryName: string) {
+    
     try {
       const repoAlreadyExists = repositories.find(repository => repository.full_name === repositoryName);
 
